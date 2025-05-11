@@ -1,0 +1,5 @@
+*
+!pre-commit
+!husky.sh
+!.gitignore
+!commit-msg
