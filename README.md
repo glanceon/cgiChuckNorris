@@ -1,12 +1,70 @@
-# React + Vite
+# Chuck Norris Joke Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple React app that shows Chuck Norris jokes using data from https://api.chucknorris.io.
 
-Currently, two official plugins are available:
+Built it to practice React + Redux Toolkit, and to show I can set up a project structure like I would in a real-world app.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Shows one random joke when the page loads
+- Lets you:
+  - Search for a joke by keyword
+  - Get a joke from a selected category
+- Replaces the previous joke with the new one
+- Clean UI with Material UI
+- Code quality checks with ESLint and Prettier
+- Git hooks (Husky) + lint-staged
+- Commit message rules enforced with Commitlint
+
+---
+
+## Stack
+
+- React
+- Redux Toolkit
+- Material UI
+- Vite
+- ESLint + Prettier
+- Jest (unit tests for reducer only for now)
+- Husky, lint-staged, commitlint
+
+---
+
+## Getting Started
+
+```bash
+yarn
+yarn dev
+```
+
+### Other scripts
+
+```bash
+yarn test        # Run Jest tests
+yarn lint        # Run ESLint
+yarn format      # Format files with Prettier
+```
+
+---
+
+## Git hooks
+
+- Pre-commit → runs ESLint + Prettier on staged files
+- Commit message → must follow conventional commits (`feat:`, `fix:`, etc.)
+
+---
+
+## Notes
+
+- I structured it like a real project (modular features, clear slices)
+- Used Flat ESLint config (v9+)
+- Hooks are working on Windows with WSL
+- Not using TypeScript here, but project is ready for it if needed
+
+---
+
+## License
+
+MIT
